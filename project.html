@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Sky</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-[#ADF0D1] text-[#00203F] transition duration-500">
+    <img src="B.png"
+        onclick="boy()"
+        class = "z-[9999999] fixed bottom-10 right-10 [50px] h-[50px] mx-10 hover:scale-110 transition duration-500 hover:translate-y-2" />
+    <header
+    id="girl"
+      class="transition duration-500 text-2xl z-[9999] fixed top-0 left-0 right-0 bg-[#00203F] h-[100px] flex text-[#ADF0D1] text-lg italic justify-between items-center px-10"
+    >
+      <p class="font-black text-5xl">Sky</p>
+      <div
+        class="flex font-bold sm:text-lg "
+      >
+        <a href="#about" class="mx-3 hover:scale-110 transition duration-500 hover:translate-y-2">About Me</a>
+        <a href="#education" class="mx-3 hover:scale-110 transition duration-500 hover:translate-y-2">Education</a>
+        <a href="#interest"  class="mx-3 hover:scale-110 transition duration-500 hover:translate-y-2">Interest</a> 
+        
+        
+      </div>
+    </header>
+
+    <div
+      id="about"
+      class="px-10 mb-[300px] flex-col lg:flex-row w-full pt-[180px] flex justify-around items-center"
+    >
+      <img
+        class="shadow-xl mb-[100px] mr-10 rounded-2xl w-[70%] lg:w-[40%] hover:scale-110 transition duration-500"
+        src="Pic.jpg"
+      />
+      <div class=" font-bold text-5xl font-serif italic">
+        <p class="text-center mb-6 text-7xl">Yo! I’m Sky</p>
+        <p class="text-center mb-6">Age: 12</p>
+        <p class="text-center mb-6">School: SPIP</p>
+        <p class="text-center mb-6">Gender: Male</p>
+      </div>
+    </div>
+
+    <div
+      id="education"
+      class="mb-[300px] p-10 w-full flex lg:flex-row flex-col justify-center items-center h-[700px]"
+    >
+      <p class=" italic font-bold text-8xl mr-10 mb-10">SPIP</p>
+      <img
+        src="image 2.png"
+        class="mr-10 mb-10 lg:w-[30%] hover:scale-110 transition duration-500"
+      />
+      <img
+        src="image 3.png"
+        class="mr-10 mb-10 lg:w-[25%] hover:scale-110 transition duration-500"
+      />
+      <img
+        src="image 4.png"
+        class="mr-10 mb-10 lg:w-[20%] hover:scale-110 transition duration-500"
+      />
+    </div>
+
+    <div
+      id="interest"
+      class="mb-[200px] relative p-10 w-full flex lg:flex-row flex-col justify-center items-center h-[700px]"
+    >
+      <p
+        class="italic rotate-[-20deg] z-[9999] font-bold text-9xl mr-10 mb-10 scale-105"
+      >
+        Interest
+      </p>
+      <img
+        src="image 6.png"
+        class="absolute left-0 top-0 lg:w-[30%] hover:scale-110 transition duration-500"
+      />
+      <img
+        src="image 10.png"
+        class="absolute left-0 bottom-0 lg:w-[25%] hover:scale-110 transition duration-500"
+      />
+      <img
+        src="image 7.png"
+        class="absolute right-0 top-0 lg:w-[20%] hover:scale-110 transition duration-500"
+      />
+      <img
+        src="image 11.png"
+        class="absolute right-0 bottom-0 lg:w-[20%] hover:scale-110 transition duration-500"
+      />
+    </div
+    >
+
+    
+    <div class="m-auto flex border-4 border-black items-center p-5 flex-col bg-blue-700 w-[50%] mb-10">
+     <p class="text-4xl text-white mb-10">Hobbies List</p>
+    <div class="flex mb-10">
+    <button onclick="addItem()" class="p-3 bg-black text-white mr-3">
+      Add
+    </button>
+    <button onclick="deleteItem()" class="p-3 bg-black text-white">
+          Remove
+      </button>
+    </div>
+    <div id="box"></div>
+    </div>
+    
+
+    </body>
+    <script src="project.js"></script>
+  </body>
+</html>
