@@ -92,15 +92,21 @@
     >
 
     
-    <div class="m-auto flex border-4 border-black items-center p-5 flex-col bg-blue-700 w-[50%] mb-10">
-     <p class="text-4xl text-white mb-10">Hobbies List</p>
-    <div class="flex mb-10">
-    <button onclick="addItem()" class="p-3 bg-black text-white mr-3">
+    <div class="m-auto flex border-4 border-black items-center p-5 flex-col bg-blue-700 w-[70%] mb-10 rounded-xl">
+     <p class="text-4xl text-white mb-10">TO-DO List</p>
+    <div class="flex flex-wrap mb-10 justify-center">
+    <button onclick="addItem()" class="p-3 bg-black text-white m-3 transition-transform hover:scale-110 rounded-xl  ">
       Add
     </button>
-    <button onclick="deleteItem()" class="p-3 bg-black text-white">
+    <button onclick="deleteItem()" class="p-3 bg-black text-white m-3 transition-transform hover:scale-110 rounded-xl ">
           Remove
       </button>
+      <button onclick="searchitem()" class="p-3 bg-black text-white m-3 transition-transform hover:scale-110 rounded-xl ">Search</button>
+      <button onclick="showall()" class="p-3 bg-black text-white m-3 transition-transform hover:scale-110 rounded-xl  ">Show All</button>
+      <button  onclick="sortitem()" class="p-3 bg-black text-white m-3 transition-transform hover:scale-110 rounded-xl  ">Sort Ascending</button>
+      <button onclick="reverseitem()" class="p-3 bg-black text-white m-3 transition-transform hover:scale-110 rounded-xl  ">Sort Descending</button>
+     
+
     </div>
     <div id="box"></div>
     </div>
