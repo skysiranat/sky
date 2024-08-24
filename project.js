@@ -19,12 +19,12 @@ while (password != "password") {
 }
 const myArray = [];
 let box = document.getElementById("box");
-function render() {
+function render(arr) {
   box.innerHTML = "";
-  myArray.forEach(function (item) {
+  arr.forEach(function (item) {
     let createElem = document.createElement("p");
     createElem.className =
-      "w-full p-5 bg-blue-800 text-white text-[2vw] text-center mb-2";
+      "w-full p-5 bg-blue-800 text-white text-[2vw] text-center mb-2 rounded-xl";
     createElem.innerHTML = item;
     box.appendChild(createElem);
   });
@@ -32,11 +32,31 @@ function render() {
 
 function deleteItem() {
   myArray.pop();
-  render();
+  render(myArray);
 }
 
 function addItem() {
-  let newitem = prompt("Adding Hobby...");
+  let newitem = prompt("Add To-Do");
+  while (newitem.length < 1) {
+    newitem = prompt("To-Do cant be empty!, Please enter again");
+  }
   myArray.push(newitem);
-  render();
+  render(myArray);
+}
+function sortitem() {
+  myArray.sort();
+  render(myArray);
+}
+function reverseitem() {
+  myArray.sort().reverse();
+  render(myArray);
+}
+function searchitem() {
+  word = prompt("Search");
+  filteredArray = myArray.filter((item) => item.includes(word));
+  render(filteredArray);
+}
+
+function showall() {
+  render(myArray);
 }
